@@ -52,15 +52,16 @@ header > .logo a:hover{
   /* vignettes*/
 
 .modal-content{
+  display: flex;
+  flex-wrap: nowrap;
   }
 
-.modal-content .vignettes{
-    display: flex;
-    
+.modal-content .vignettes .row1 .row2{
+    display: inline;
     flex-direction: row;
 }
 .modal-content .vignettes .imgVignettes {
-  width: 100%;
+  width: 50vw;
   display: flex;
   flex-direction: row;
 }
@@ -73,7 +74,7 @@ width: 50%
 
   
 
-
+/* BIG BOX AFFICHAGE */
 
 .bigBox{
     /* width: 70%; */
