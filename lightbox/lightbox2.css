@@ -178,6 +178,7 @@ footer{
   display: flex;
   justify-content: center;
   font-weight: 900;
+  margin: 1rem;
 }
 
 
