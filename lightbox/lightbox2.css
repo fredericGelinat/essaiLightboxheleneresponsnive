@@ -59,11 +59,10 @@ header > .logo a:hover{
     
     flex-direction: row;
 }
- .modal-content .vignettes .imgVignettes{
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-
+.modal-content .vignettes .imgVignettes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
   .modal-content .vignettes .column{
 display: flex;
@@ -78,6 +77,9 @@ width: 50%
 
 .bigBox{
     /* width: 70%; */
+}
+.bigBox .affichage{
+  width: 100vw;
 }
 .bigBox .affichage img{
     margin-top: 2em;
@@ -166,4 +168,109 @@ width: 50%
   
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+
+
+  /*              MEDIA QUERIES               */
+
+
+  @media  screen and (min-width: 800px) {
+    
+    .modal-content {
+      display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+ .row1 img{
+   margin: 1rem;
+   padding: 1rem;
+ }
+
+ .row2 img{
+   margin: 1rem;
+   padding: 1rem;
+ }
+  }
+
+  
+  @media screen and (min-width:890px) {
+    
+    #myModal{
+      /* flex-direction: row; */
+    }
+
+    .modal-content {
+      /* display: flex; */
+      /* flex-direction: column; */
+      width: 38%;
+      /* margin-right: 15px; */
+  }
+  .vignettes .imgVignettes {
+    width: 40%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* gap: 10px 10px; */
+}
+   .row1, .row2{
+     display: flex;
+     /* column-gap: 15px; */
+   }
+
+   
+ 
+  .row2 img{
+    margin: 0;
+  }
+
+  .row1 img {
+     margin: 0; 
+}
+   .modal-content .vignettes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.modal-content .vignettes .imgVignettes {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+  }
+
+
+  @media screen and (min-width: 1200px){
+    
+    #myModal{
+
+      flex-direction: row;
+
+    }
+
+    .bigBox .affichage{
+      width: 50vw;
+    }
+  }
+
+  @media screen and (min-width: 1400px){
+
+    .modal-content {
+      width: 27%;
+  }
+  .bigBox {
+    width: 41%;
+    /* display: flex; */
+    margin: 5%;
+} 
+
+.bigBox img{
+  width: 80% !important;
+}
   }
