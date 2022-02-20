@@ -172,7 +172,13 @@ width: 50%
   }
 
 
+/*    foooter */
 
+footer{
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+}
 
 
   /*              MEDIA QUERIES               */
