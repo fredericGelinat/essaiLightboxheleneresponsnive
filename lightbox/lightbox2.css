@@ -121,7 +121,7 @@ width: 50%
     padding: 2px 16px;
     color: rgb(8, 8, 8);
     /* margin-top: 10px; */
-    position: absolute;
+    /* position: absolute; */
     top: 32rem;
     font-size: 11px;
 }
