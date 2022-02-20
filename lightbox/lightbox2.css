@@ -22,42 +22,36 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       /* background-color: rgb(250, 252, 251); */
   }
 
   /* vignettes*/
 
-  .modal-content{
-      display: flex;
+.modal-content{
   }
+
 .modal-content .vignettes{
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    
+    flex-direction: row;
 }
-  .modal-content .vignettes .imgVignettes{
+ .modal-content .vignettes .imgVignettes{
     width: 25%;
+    display: flex;
+    flex-direction: row;
 
 }
   .modal-content .vignettes .column{
 display: flex;
 flex-direction: row;
 width: 50%
-  }
-  .modal-content .vignettes .column .demo{
-     
-  }
+  } 
+ 
 
-  .row1, .row2{
-      display: flex;
-  }
+  
 
-  .row1 .demo{
-    margin: 1em;
-}
-.row2 .demo{
-    margin:  1em;
-}
+
 
 .bigBox{
     /* width: 70%; */
@@ -124,11 +118,11 @@ width: 50%
   .caption-container {
     text-align: center;
     /* background-color: rgb(255, 255, 255); */
-    /* padding: 2px 16px; */
+    padding: 2px 16px;
     color: rgb(8, 8, 8);
     /* margin-top: 10px; */
     position: absolute;
-    top: 13rem;
+    top: 32rem;
     font-size: 11px;
 }
 
