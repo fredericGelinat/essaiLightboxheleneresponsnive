@@ -1,0 +1,173 @@
+<!DOCTYPE html> 
+<html lang="fr-FR">
+	<head>
+		<meta charset="utf-8" />
+		<title>Titre de la page</title>
+    <link rel="stylesheet" href="/style.3.css">
+		
+	</head>	
+	<body>
+
+    <section class="allPages">
+          <!-- changer la div !!!!!!!!!!!!!!!!!!!!! visit +1-->
+          <div class="container">
+                  <div id="visit1">
+                    <span class="imgClick">
+                      <a href="#">
+                        <img src="/paint/brik1.jpg" alt="Ne pas laisser vide !" onclick="change(this.src)" data-toShow="divbouton" />
+                      </a>
+                    </span>
+                    <div>
+                        <ul>
+                          <li onclick="showDetails(this)" id="gitanjali"
+                                  data-book-author="Rabindra Nath Tagore">
+                              Gitanjali
+                          </li>
+                          
+                          <li onclick="showDetails(this)" id="conquest_of_self"
+                                  data-book-author="Mahatma Gandhi">
+                              Conquest of Self
+                          </li>
+                          
+                          <li onclick="showDetails(this)" id="broken_wings"
+                                  data-book-author="Sarojini Naidu">
+                              Broken Wings
+                          </li>
+                      </ul>
+                  </div>
+                    <!-- <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+                      consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+                      Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+                        aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+                        mattis viverra ipsum ut venenatis. Nulla facilisi.</div> -->
+                  </div>
+        <!-- </div> -->
+        <!-- <div class="container"> -->
+                  <div id="visit1">
+                    <!-- <img src="/paint/brik4.jpg" alt="" class="photo" id="main" /> -->
+                    <span class="imgClick">
+                      <a href="#">
+                        <img src="/paint/brik1.jpg" alt="Ne pas laisser vide !" onclick="change(this.src)" data-toShow="divbouton3" />
+                      </a>
+                    </span>
+                    <!-- <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+                      consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+                      Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+                        aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+                        mattis viverra ipsum ut venenatis. Nulla facilisi.
+                    </div> -->
+                  </div>
+      <!-- </div> -->
+      <!-- <div class="container"> -->
+                  <div id="visit1">
+                    <!-- <img src="/paint/brik4.jpg" alt="" class="photo" id="main" /> -->
+                    <span class="imgClick">
+                      <a href="#">
+                        <img src="/paint/brik1.jpg" alt="Ne pas laisser vide !" onclick="change(this.src)" data-toShow="divbouton1" />
+                      </a>
+                    </span>
+                    <!-- <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+                      consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+                      Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+                        aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+                        mattis viverra ipsum ut venenatis. Nulla facilisi.
+                    </div> -->
+                  </div>
+      <!-- </div> -->
+      <!-- <div class="container"> -->
+                  <div id="visit1">
+                    <!-- <img src="/paint/brik4.jpg" alt="" class="photo" id="main" /> -->
+                    <span class="imgClick">
+                      <a href="#">
+                        <img src="/paint/brik1.jpg" alt="Ne pas laisser vide !" onclick="change(this.src)" data-toShow="divbouton2" />
+                      </a>
+                    </span>
+                    <!-- <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+                      consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+                      Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+                        aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+                        mattis viverra ipsum ut venenatis. Nulla facilisi.
+                    </div> -->
+                  </div>
+      <!-- </div> -->
+      </div>
+      <div class="alignMainView">
+        <img src="/paint/brik4.jpg" alt="" class="photo" id="main" />
+            <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+            consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+            Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+              aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+              mattis viverra ipsum ut venenatis. Nulla facilisi.
+            </div>
+            <div id="divbouton1">Lorem .
+            </div>
+            <div id="divbouton2">Lorem ipsum 
+            </div>
+            <div id="divbouton3">Lorem ipsum dolor 
+            </div>
+            <div id="divbouton4">Lorem ipsum dolor sit amet
+            </div>
+
+      </div>
+      </div>
+    </section>
+
+
+
+
+<script type="text/javascript">
+
+const change = src => {
+    document.getElementById('main').src = src
+}
+
+
+
+
+function showDetails(book) {
+            var bookauthor = book.getAttribute("data-book-author");
+            alert(book.innerHTML + " is written by "
+                                    + bookauthor + ".");
+        }
+
+
+
+
+function hideShow(e){
+
+	(e.preventDefault) ? e.preventDefault() : (e.returnValue = false);
+	
+	var targetID = (e.target || e.srcElement).getAttribute("data-toShow"),
+		elementToShow = document.getElementById(targetID);
+
+	elementToShow.style.height = (elementToShow.offsetHeight == 0 ? elementToShow.scrollHeight : "0") + 'px';
+
+}
+
+var a = document.querySelectorAll("[data-toShow]"),
+	x = 0,
+	l = a.length;
+
+for (; x<l; x++) document.addEventListener ? a[x].addEventListener("click", hideShow, false) : a[x].attachEvent("onclick", hideShow);
+
+
+
+function hideShow1(e){
+
+(e.preventDefault) ? e.preventDefault() : (e.returnValue = false);
+
+var targetID = (e.target || e.srcElement).getAttribute("divbouton1"),
+  elementToShow = document.getElementById(targetID);
+
+elementToShow.style.height = (elementToShow.offsetHeight == 0 ? elementToShow.scrollHeight : "0") + 'px';
+
+}
+
+var a = document.querySelectorAll("[divbouton1]"),
+x = 0,
+l = a.length;
+
+for (; x<l; x++) document.addEventListener ? a[x].addEventListener("click", hideShow1, false) : a[x].attachEvent("onclick", hideShow);
+</script>
+	</body>
+</html>

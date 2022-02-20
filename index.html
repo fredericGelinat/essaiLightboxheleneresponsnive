@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+   
+    <!-- Container for our gallery -->
+    <div class="container">
+          
+        <!-- Main view of our gallary -->
+        <div class="main_view">
+    
+                <img src="/paint/brik1.jpg" id="main" alt="IMAGE">
+                      
+        </div>
+        
+        <!-- All images with side view -->
+        <div class="side_view">
+           <div class="containt1" >
+               <span>
+                 <a href="">   <img id="clicked" src="/paint/brik2.jpg" onclick="change(this.src)" data-toShow="divbouton" >
+                 </a>
+              </span>     
+                    <!-- <figcaption>
+                        name, description, blabla
+                    </figcaption> -->
+                    <div id="divbouton">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nisl lectus, 
+                        consequat eget iaculis nec, cursus a metus. In eros massa, tincidunt vel dolor eu, rutrum laoreet nibh.
+                         Ut bibendum massa sed consequat ultricies. Duis sed ante quis odio mattis ornare. In vitae quam a est
+                          aliquam aliquet non vel purus. Praesent condimentum nibh odio, et condimentum odio interdum ut. Nunc 
+                          mattis viverra ipsum ut venenatis. Nulla facilisi.</div>
+                    </div>
+            </div> 
+            
+            <!-- <img src="/paint/brik3.jpg" onclick="change(this.src)">
+            <img src="/paint/brik4.jpg" onclick="change(this.src)"> -->
+            <!-- <img src="/paint/cubik1.jpg" onclick="change(this.src)"> -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+const change = src => {
+    document.getElementById('main').src = src
+}
+
+        function hideShow(e){
+        
+            (e.preventDefault) ? e.preventDefault() : (e.returnValue = false);
+            
+            var targetID = (e.target || e.srcElement).getAttribute("data-toShow"),
+                elementToShow = document.getElementById(targetID);
+        
+            elementToShow.style.height = (elementToShow.offsetHeight == 0 ? elementToShow.scrollHeight : "0") + 'px';
+        
+        }
+        
+        var a = document.querySelectorAll("[data-toShow]"),
+            x = 0,
+            l = a.length;
+        
+        for (; x<l; x++) document.addEventListener ? a[x].addEventListener("click", hideShow, false) : a[x].attachEvent("onclick", hideShow);
+        
+        </script>
+
+  
+
+
+    
+         
+        
+
+
+
+
+
+
+
+
+</body>
+</html>
