@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="/lightbox/lightbox.css"> -->
+<!--link css-->
+<link rel="stylesheet" href="/lightbox/lightbox2.css">
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<!-- <div class="row"> -->
+  <!-- <div class="column">
+    <img src="/paint/brik1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div> -->
+  <!-- <div class="column">
+    <img src="/paint/brik2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/paint/brik3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="/paint/cubik1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div> -->
+<!-- </div> -->
+
+<div id="myModal" class="modal">
+  <!-- <span class="close cursor" onclick="closeModal()">&times;</span> -->
+  <div class="modal-content">
+        <div class="vignettes">
+                <div class="imgVignettes">
+                    <div class="row1">
+                        <img class="demo cursor" src="/paint/brik1.jpg" style="width:100%" onclick="currentSlide(1)" alt=" and sunrise">
+                        
+                        
+                        <img class="demo cursor" src="/paint/brik2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                        
+                    </div>
+                    <div class="row2">   
+                        <img class="demo cursor" src="/paint/brik3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    
+                        <img class="demo cursor" src="/paint/cubik1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                </div>
+        </div>
+        <div class="bigBox">
+            <div class="affichage">
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="/paint/brik4.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="/paint/brik2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="/paint/brik4.jpg" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="/paint/cubik2.jpg" style="width:100%">
+                    </div>
+                <div class="preNext">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="caption-container">
+                    <p id="caption">
+
+                    </p>
+                </div>
+            </div>    
+        </div>
+  </div>
+</div>
+
+
+
+  <script src="/lightbox/ligthbox.js"></script>  
+</body>
+</html>
