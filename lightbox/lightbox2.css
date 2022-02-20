@@ -18,6 +18,29 @@ body {
   }
 
 
+  h2 .titreSerie{
+    text-transform: uppercase;
+  }
+/* retour accueil*/
+
+header > .logo a{
+  text-decoration: none;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+}
+
+.logo .artistNameAccueil{
+  font-size: 40px;
+  margin-top: 5px;
+}
+header > .logo a:hover{
+  color: #0808080e;
+}
+
+
+
+
   #myModal{
       display: flex;
       justify-content: center;
@@ -129,7 +152,7 @@ width: 50%
 /* HOVER SHADOW ON UNSELECTED  IMG*/
 
 .demo {
-    opacity: 0.6;
+    opacity: 0.5;
   }
   
   .active,
